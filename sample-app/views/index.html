@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vid</title>
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
+<link rel='stylesheet' href='/style.css' />
+</head>
+
+<body>
+<article>
+	<video src="/media/vid.mp4" controls>
+		<track src="/sub/subs.vtt" kind="subtitles" srclang="he" label="Hebrew Subtitles" default>
+	</video>
+
+	<section>
+		<label for="delayRange">Subtitles delay</label>
+		<input type="range" id="delayRange" min="-20" max="20" step="0.1" value="0" />
+		<span id="delayCont">
+			<button id="minus">-</button>
+			<span id="delayNum">0</span>
+			<button id="plus">+</button>
+		</span>
+	</section>
+</article>
+
+	<script src="SubSync.min.js"></script>
+	<script src="script.min.js"></script>
+</body>
+</html>

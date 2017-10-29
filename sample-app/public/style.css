@@ -1,0 +1,88 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 40px 0 0 40px;
+	padding: 40px 0 0 40px;
+}
+
+article {
+	margin: 0;
+	padding: 0;
+}
+
+video {
+	width: 40%;
+	margin: 0;
+	position: absolute;
+}
+
+section {
+	width: 40%;
+	position: absolute;
+	right: 10%;
+	margin: 0;
+	padding: 30px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 22px;
+}
+
+label {
+	display: block;
+	margin: 0 0 35px 0;
+	width: 100%;
+}
+
+#delayRange {
+	width: 100%;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+#delayCont {
+	display: block;
+	width: 20%;
+	left: 40%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+
+#delayNum {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	text-align: center;
+	margin: 0 0 0 -20px;
+	display: inline-block;
+	font-weight: bold;
+	position: absolute;
+	left: 50%;
+}
+
+#minus, #plus {
+	width: 40px;
+	height: 30px;
+	padding: 1px 7px; display : inline-block;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+}
+
+#minus {
+	left: 0;
+}
+
+#plus {
+	right: 0;
+}
+
+video::cue {
+	font-family: 'Alef';
+	font-size: 25px;
+}
