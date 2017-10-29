@@ -1,6 +1,6 @@
 # SubSync
 
-##About
+## About
 
 This tiny library helps you synchronizing subtitles with a video. For example,
 you may advance all the track's cues by 4.1 seconds, shift them 2.8
@@ -8,7 +8,7 @@ seconds backwards, etc.
 
 Version: 1.0.0.
 
-##Using
+## Using
 
 The library's main object is `SubSync`. It has one function, `track`. This function
 receives the `<track>` element as an argument, and returns a `Promise` object
@@ -21,7 +21,7 @@ adjusts the subtitles' timing correspondingly.
 Note: You should include `SubSync.js` or `SubSync.min.js` in your page in order to
 use the API. (These files are placed under `src`).
 
-##Example
+## Example
 
 ```
 SubSync.track(trackElement).then((syncObj) => {
