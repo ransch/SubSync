@@ -12,10 +12,10 @@ SubSync.track(document.querySelector("track")).then((syncObj) => {
 });
 
 function bindKeyboard(vid) {
-	window.addEventListener('keydown', function(event) {
+	window.addEventListener('keydown', (event) => {
 		switch (event.key) {
 		case ' ':
-			if (document.activeElement != vid) togglePlaying();
+			togglePlaying();
 			break;
 		case 'ArrowLeft':
 			precedeFive();
@@ -24,6 +24,10 @@ function bindKeyboard(vid) {
 			proceedFive();
 			break;
 		}
+	}, true);
+
+	vid.addEventListener('focus', (event) => {
+		vid.blur();
 	}, true);
 
 	function proceedFive() {
